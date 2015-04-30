@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0B4144DC1AF1E2B400FE9DD0 /* Queue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B4144DB1AF1E2B400FE9DD0 /* Queue.swift */; };
+		0B4144DE1AF1E67500FE9DD0 /* QueueTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B4144DD1AF1E67500FE9DD0 /* QueueTests.swift */; };
 		0B54EEEB1AEDEB4600F7ABCB /* DataStructures.h in Headers */ = {isa = PBXBuildFile; fileRef = 0B54EEEA1AEDEB4600F7ABCB /* DataStructures.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0B54EEF11AEDEB4600F7ABCB /* DataStructures.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B54EEE51AEDEB4600F7ABCB /* DataStructures.framework */; };
 		0B54EEF81AEDEB4600F7ABCB /* StackTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B54EEF71AEDEB4600F7ABCB /* StackTests.swift */; };
@@ -25,6 +27,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0B4144DB1AF1E2B400FE9DD0 /* Queue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Queue.swift; sourceTree = "<group>"; };
+		0B4144DD1AF1E67500FE9DD0 /* QueueTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QueueTests.swift; sourceTree = "<group>"; };
 		0B54EEE51AEDEB4600F7ABCB /* DataStructures.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DataStructures.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0B54EEE91AEDEB4600F7ABCB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0B54EEEA1AEDEB4600F7ABCB /* DataStructures.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DataStructures.h; sourceTree = "<group>"; };
@@ -77,6 +81,7 @@
 			children = (
 				0B54EEEA1AEDEB4600F7ABCB /* DataStructures.h */,
 				0B54EF011AEDEB5E00F7ABCB /* Stack.swift */,
+				0B4144DB1AF1E2B400FE9DD0 /* Queue.swift */,
 				0B54EF031AEDEBD500F7ABCB /* Node.swift */,
 				0B54EEE81AEDEB4600F7ABCB /* Supporting Files */,
 			);
@@ -95,6 +100,7 @@
 			isa = PBXGroup;
 			children = (
 				0B54EEF71AEDEB4600F7ABCB /* StackTests.swift */,
+				0B4144DD1AF1E67500FE9DD0 /* QueueTests.swift */,
 				0B54EEF51AEDEB4600F7ABCB /* Supporting Files */,
 			);
 			path = DataStructuresTests;
@@ -216,6 +222,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0B54EF021AEDEB5E00F7ABCB /* Stack.swift in Sources */,
+				0B4144DC1AF1E2B400FE9DD0 /* Queue.swift in Sources */,
 				0B54EF041AEDEBD500F7ABCB /* Node.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -225,6 +232,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0B54EEF81AEDEB4600F7ABCB /* StackTests.swift in Sources */,
+				0B4144DE1AF1E67500FE9DD0 /* QueueTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -411,6 +419,7 @@
 				0B54EEFD1AEDEB4600F7ABCB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0B54EEFE1AEDEB4600F7ABCB /* Build configuration list for PBXNativeTarget "DataStructuresTests" */ = {
 			isa = XCConfigurationList;
@@ -419,6 +428,7 @@
 				0B54EF001AEDEB4600F7ABCB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
