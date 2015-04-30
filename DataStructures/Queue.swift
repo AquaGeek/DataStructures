@@ -40,6 +40,12 @@ public class Queue<T> {
         if let sureHead = head {
             head = sureHead.next
             count--
+            
+            // Is this the last item?
+            if head == nil {
+                tail = nil
+            }
+            
             return sureHead.value
         } else {
             return nil
