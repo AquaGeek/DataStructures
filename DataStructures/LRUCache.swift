@@ -69,6 +69,7 @@ public class LRUCache<Key: Hashable, Value> {
                         for _ in capacity..<count {
                             storage[tail!.key] = nil
                             tail = tail?.previous
+                            tail?.next = nil
                         }
                     }
                 }
