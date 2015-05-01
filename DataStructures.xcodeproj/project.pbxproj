@@ -14,6 +14,8 @@
 		0B54EEF81AEDEB4600F7ABCB /* StackTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B54EEF71AEDEB4600F7ABCB /* StackTests.swift */; };
 		0B54EF021AEDEB5E00F7ABCB /* Stack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B54EF011AEDEB5E00F7ABCB /* Stack.swift */; };
 		0B54EF041AEDEBD500F7ABCB /* Node.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B54EF031AEDEBD500F7ABCB /* Node.swift */; };
+		0B7E11D61AF1EB710050D6B5 /* LRUCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B7E11D51AF1EB710050D6B5 /* LRUCache.swift */; };
+		0B7E11D81AF1F52A0050D6B5 /* LRUCacheTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B7E11D71AF1F52A0050D6B5 /* LRUCacheTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +39,8 @@
 		0B54EEF71AEDEB4600F7ABCB /* StackTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackTests.swift; sourceTree = "<group>"; };
 		0B54EF011AEDEB5E00F7ABCB /* Stack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Stack.swift; sourceTree = "<group>"; };
 		0B54EF031AEDEBD500F7ABCB /* Node.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Node.swift; sourceTree = "<group>"; };
+		0B7E11D51AF1EB710050D6B5 /* LRUCache.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LRUCache.swift; sourceTree = "<group>"; };
+		0B7E11D71AF1F52A0050D6B5 /* LRUCacheTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LRUCacheTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,9 +84,10 @@
 			isa = PBXGroup;
 			children = (
 				0B54EEEA1AEDEB4600F7ABCB /* DataStructures.h */,
-				0B54EF011AEDEB5E00F7ABCB /* Stack.swift */,
-				0B4144DB1AF1E2B400FE9DD0 /* Queue.swift */,
+				0B7E11D51AF1EB710050D6B5 /* LRUCache.swift */,
 				0B54EF031AEDEBD500F7ABCB /* Node.swift */,
+				0B4144DB1AF1E2B400FE9DD0 /* Queue.swift */,
+				0B54EF011AEDEB5E00F7ABCB /* Stack.swift */,
 				0B54EEE81AEDEB4600F7ABCB /* Supporting Files */,
 			);
 			path = DataStructures;
@@ -99,8 +104,9 @@
 		0B54EEF41AEDEB4600F7ABCB /* DataStructuresTests */ = {
 			isa = PBXGroup;
 			children = (
-				0B54EEF71AEDEB4600F7ABCB /* StackTests.swift */,
+				0B7E11D71AF1F52A0050D6B5 /* LRUCacheTests.swift */,
 				0B4144DD1AF1E67500FE9DD0 /* QueueTests.swift */,
+				0B54EEF71AEDEB4600F7ABCB /* StackTests.swift */,
 				0B54EEF51AEDEB4600F7ABCB /* Supporting Files */,
 			);
 			path = DataStructuresTests;
@@ -221,6 +227,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0B7E11D61AF1EB710050D6B5 /* LRUCache.swift in Sources */,
 				0B54EF021AEDEB5E00F7ABCB /* Stack.swift in Sources */,
 				0B4144DC1AF1E2B400FE9DD0 /* Queue.swift in Sources */,
 				0B54EF041AEDEBD500F7ABCB /* Node.swift in Sources */,
@@ -232,6 +239,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0B54EEF81AEDEB4600F7ABCB /* StackTests.swift in Sources */,
+				0B7E11D81AF1F52A0050D6B5 /* LRUCacheTests.swift in Sources */,
 				0B4144DE1AF1E67500FE9DD0 /* QueueTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
