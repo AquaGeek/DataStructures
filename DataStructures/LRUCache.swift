@@ -25,13 +25,13 @@ public class LRUCache<Key: Hashable, Value> {
     
     private var capacity: Int
     
-    private var storage: [Key: Value]
+    private var storage: [Key: Node]
     private var head: Node?
     private var tail: Node?
     
     public init(capacity: Int) {
         self.capacity = capacity
-        self.storage = [Key: Value](minimumCapacity: capacity)
+        self.storage = [Key: Node](minimumCapacity: capacity)
     }
     
     public var count: Int {
@@ -41,28 +41,28 @@ public class LRUCache<Key: Hashable, Value> {
     }
     
     public subscript(key: Key) -> Value? {
-        /// Complexity: O(n)
+        /// Complexity: O(1)
         get {
-            if let node = findNode(key) {
+            if let node = storage[key] {
                 moveNodeToFront(node)
                 return node.value
             }
             
             return nil
         }
-        /// Complexity: O(n)
+        /// Complexity: O(1)
         set(newValue) {
-            storage[key] = newValue
-            
             if let value = newValue {
                 // Value was provided. Find the corresponding node, update its value, and move
                 // it to the front of the list. If it's not found, create it at the front.
-                if let node = findNode(key) {
+                if let node = storage[key] {
                     node.value = value
                     moveNodeToFront(node)
                 } else {
                     var newNode = Node(key: key, value: value)
                     addNodeToFront(newNode)
+                    
+                    storage[key] = newNode
                     
                     // Truncate from the tail if we're over capacity
                     if count > capacity {
@@ -75,7 +75,8 @@ public class LRUCache<Key: Hashable, Value> {
                 }
             } else {
                 // Value was removed. Find the corresponding node and remove it as well.
-                if let node = findNode(key) {
+                if let node = storage[key] {
+                    storage[key] = nil
                     removeNode(node)
                 }
             }
@@ -84,23 +85,6 @@ public class LRUCache<Key: Hashable, Value> {
     
     
     /// MARK: - Internal
-    
-    /// Finds the node with the given key or returns `nil` if not found.
-    ///
-    /// Complexity: O(n)
-    private func findNode(key: Key) -> Node? {
-        var node = head
-        
-        while node != nil {
-            if node?.key == key {
-                return node
-            } else {
-                node = node?.next
-            }
-        }
-        
-        return nil
-    }
     
     /// Prepends the given node to the front of the list
     ///
