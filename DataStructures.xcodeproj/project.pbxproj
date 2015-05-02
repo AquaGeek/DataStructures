@@ -17,6 +17,7 @@
 		0B54EF041AEDEBD500F7ABCB /* Node.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B54EF031AEDEBD500F7ABCB /* Node.swift */; };
 		0B7E11D61AF1EB710050D6B5 /* LRUCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B7E11D51AF1EB710050D6B5 /* LRUCache.swift */; };
 		0B7E11D81AF1F52A0050D6B5 /* LRUCacheTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B7E11D71AF1F52A0050D6B5 /* LRUCacheTests.swift */; };
+		0BB982D21AF45A440019B51F /* ListTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BB982D11AF45A440019B51F /* ListTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +44,7 @@
 		0B54EF031AEDEBD500F7ABCB /* Node.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Node.swift; sourceTree = "<group>"; };
 		0B7E11D51AF1EB710050D6B5 /* LRUCache.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LRUCache.swift; sourceTree = "<group>"; };
 		0B7E11D71AF1F52A0050D6B5 /* LRUCacheTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LRUCacheTests.swift; sourceTree = "<group>"; };
+		0BB982D11AF45A440019B51F /* ListTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +109,7 @@
 		0B54EEF41AEDEB4600F7ABCB /* DataStructuresTests */ = {
 			isa = PBXGroup;
 			children = (
+				0BB982D11AF45A440019B51F /* ListTests.swift */,
 				0B7E11D71AF1F52A0050D6B5 /* LRUCacheTests.swift */,
 				0B4144DD1AF1E67500FE9DD0 /* QueueTests.swift */,
 				0B54EEF71AEDEB4600F7ABCB /* StackTests.swift */,
@@ -243,6 +246,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0B54EEF81AEDEB4600F7ABCB /* StackTests.swift in Sources */,
+				0BB982D21AF45A440019B51F /* ListTests.swift in Sources */,
 				0B7E11D81AF1F52A0050D6B5 /* LRUCacheTests.swift in Sources */,
 				0B4144DE1AF1E67500FE9DD0 /* QueueTests.swift in Sources */,
 			);

@@ -10,11 +10,11 @@ import Foundation
 
 /// Element in a linked list
 public class DoublyLinkedNode<T> {
-    var value: T
-    var previous: DoublyLinkedNode?
-    var next: DoublyLinkedNode?
+    public var value: T
+    public var previous: DoublyLinkedNode?
+    public var next: DoublyLinkedNode?
     
-    public init(value: T) {
+    public init(_ value: T) {
         self.value = value
     }
 }
@@ -25,7 +25,15 @@ public class List<T> {
     
     var head: ListNode?
     var tail: ListNode?
-    var length: Int = 0
+    public private(set) var length: Int = 0
+    
+    public var firstNode: ListNode? {
+        return head
+    }
+    
+    public var lastNode: ListNode? {
+        return tail
+    }
     
     public init() {
     }
