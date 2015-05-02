@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0B3DC1651AF342790083CC0C /* List.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B3DC1641AF342790083CC0C /* List.swift */; };
 		0B4144DC1AF1E2B400FE9DD0 /* Queue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B4144DB1AF1E2B400FE9DD0 /* Queue.swift */; };
 		0B4144DE1AF1E67500FE9DD0 /* QueueTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B4144DD1AF1E67500FE9DD0 /* QueueTests.swift */; };
 		0B54EEEB1AEDEB4600F7ABCB /* DataStructures.h in Headers */ = {isa = PBXBuildFile; fileRef = 0B54EEEA1AEDEB4600F7ABCB /* DataStructures.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -29,6 +30,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0B3DC1641AF342790083CC0C /* List.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = List.swift; sourceTree = "<group>"; };
 		0B4144DB1AF1E2B400FE9DD0 /* Queue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Queue.swift; sourceTree = "<group>"; };
 		0B4144DD1AF1E67500FE9DD0 /* QueueTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QueueTests.swift; sourceTree = "<group>"; };
 		0B54EEE51AEDEB4600F7ABCB /* DataStructures.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DataStructures.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -84,6 +86,7 @@
 			isa = PBXGroup;
 			children = (
 				0B54EEEA1AEDEB4600F7ABCB /* DataStructures.h */,
+				0B3DC1641AF342790083CC0C /* List.swift */,
 				0B7E11D51AF1EB710050D6B5 /* LRUCache.swift */,
 				0B54EF031AEDEBD500F7ABCB /* Node.swift */,
 				0B4144DB1AF1E2B400FE9DD0 /* Queue.swift */,
@@ -230,6 +233,7 @@
 				0B7E11D61AF1EB710050D6B5 /* LRUCache.swift in Sources */,
 				0B54EF021AEDEB5E00F7ABCB /* Stack.swift in Sources */,
 				0B4144DC1AF1E2B400FE9DD0 /* Queue.swift in Sources */,
+				0B3DC1651AF342790083CC0C /* List.swift in Sources */,
 				0B54EF041AEDEBD500F7ABCB /* Node.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
