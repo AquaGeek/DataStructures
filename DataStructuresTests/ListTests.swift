@@ -76,6 +76,22 @@ class ListTests: XCTestCase {
         }
     }
     
+    func testTraversal() {
+        let list = List<Int>()
+        
+        for i in 0..<10 {
+            let node = DoublyLinkedNode<Int>(i)
+            list.append(node)
+        }
+        
+        XCTAssertEqual(list.length, 10, "List should have 10 items in it")
+        
+        var i = 0
+        for j in list {
+            XCTAssertEqual(j, i++)
+        }
+    }
+    
     func testMoveToFront() {
         let values = [0, 1, 2, 3]
         let list = List<Int>()

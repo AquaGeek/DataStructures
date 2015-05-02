@@ -100,3 +100,21 @@ public class List<T> {
         append(node)
     }
 }
+
+
+/// MARK: - Extensions
+
+extension List : SequenceType {
+    public func generate() -> GeneratorOf<T> {
+        var currentNode = firstNode
+        
+        return GeneratorOf<T> {
+            if let node = currentNode {
+                currentNode = node.next
+                return node.value
+            } else {
+                return .None
+            }
+        }
+    }
+}
