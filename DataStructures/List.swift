@@ -20,7 +20,7 @@ public class DoublyLinkedNode<T> {
 }
 
 /// A doubly-linked list
-public class List<T> {
+public final class List<T> {
     private typealias ListNode = DoublyLinkedNode<T>
     
     var head: ListNode?
@@ -115,6 +115,16 @@ extension List : SequenceType {
             } else {
                 return .None
             }
+        }
+    }
+}
+
+extension List : ArrayLiteralConvertible {
+    public convenience init(arrayLiteral elements: T...) {
+        self.init()
+        for element in elements {
+            let node = DoublyLinkedNode<T>(element)
+            self.append(node)
         }
     }
 }

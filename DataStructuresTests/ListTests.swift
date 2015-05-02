@@ -23,9 +23,7 @@ class ListTests: XCTestCase {
     }
     
     func testPrepend() {
-        let list = List<Int>()
-        let firstNode = DoublyLinkedNode<Int>(1)
-        list.prepend(firstNode)
+        let list = List<Int>(arrayLiteral: 1)
         XCTAssertEqual(list.length, 1, "List should contain 1 item")
         
         let otherNode = DoublyLinkedNode<Int>(2)
@@ -77,12 +75,7 @@ class ListTests: XCTestCase {
     }
     
     func testTraversal() {
-        let list = List<Int>()
-        
-        for i in 0..<10 {
-            let node = DoublyLinkedNode<Int>(i)
-            list.append(node)
-        }
+        let list = List<Int>(arrayLiteral: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9)
         
         XCTAssertEqual(list.length, 10, "List should have 10 items in it")
         
